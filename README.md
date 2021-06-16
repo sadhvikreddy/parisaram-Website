@@ -1,6 +1,6 @@
 # Changelog
 First Iteration of website (Version2)
-## changes
+## Changes
 1) Services added
 2) Bug fixes
 3) established version control with git
