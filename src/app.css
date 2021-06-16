@@ -1,0 +1,12 @@
+* {    
+    margin: 0 !important;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    transition: all 0.2s ease;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
