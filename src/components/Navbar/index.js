@@ -12,7 +12,6 @@ import {
     NavLinks,
  } from './NavbarElements'
  import pm from '../../images/pmlogohd.png'
- import { animateScroll as scroll } from 'react-scroll'
 
 const Navbar = ({toggle}) => {
 
@@ -39,20 +38,15 @@ const Navbar = ({toggle}) => {
     window.addEventListener('scroll', Scr);
   },[])
 
-  const Gohome = () => {
-      scroll.scrollToTop();
-  }
-
 
         return (
             <>
                 <Nav tvl = {Scrollin} navB = {navBarVis}>
                     <NavbarContainer>
                         <NavbarWrapper>
-                        <NavLogoWrapper to="/" onClick = {Gohome} 
-                        data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-in-sine"  data-aos-duration="2000"
+                        <NavLogoWrapper
                         >
-                            <NavLogo src = {pm} type = 'image/png' tvl = {Scrollin}/>
+                            <NavLogo src = {pm} type = 'image/png'/>
                         </NavLogoWrapper>
                         <MobileIcon onClick = {toggle}>
                             <MdMenu />
@@ -68,13 +62,14 @@ const Navbar = ({toggle}) => {
                                 >About</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="wwd"
-                                          smooth = {true}
-                                          duration = {500}
-                                          spy = {true}
-                                          exact = 'true'
-                                          offset = {-80}
-                                >What We Do?</NavLinks>
+                                <NavLinks 
+                                        to="sdf"
+                                        smooth = {true}
+                                        duration = {1}
+                                        spy = {true}
+                                        offset=  {-80}
+                                >
+                                Our services</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="contact"

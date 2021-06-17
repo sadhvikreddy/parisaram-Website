@@ -15,6 +15,7 @@ export const Sidebarcontainer = styled.aside`
     transition: 0.3s ease-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({isOpen}) => (isOpen ? '0' : '-100%')}; 
+    z-index:1002;
 `
 
 export const CloseIcon = styled(MdClose)`
@@ -66,3 +67,4 @@ export const SidebarLink = styled(linkS)`
         color: #000
     }
 `
+

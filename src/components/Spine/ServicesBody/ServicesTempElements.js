@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
 
     @media screen and (max-width: 720px){
         padding: 0px;
-
         flex-direction:  column;
     }
 
@@ -22,10 +21,16 @@ export const Wrapper = styled.div`
 export const Photo = styled.img`
     height: auto;
     width: 42%;
+    background-color: rgba( 255, 255, 255, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 3px;
 
     @media screen and (max-width: 720px){
-        padding-bottom: 15px;
+        height: auto;
         width: 100%;
+
     }
 `
 export const TextContainer = styled.div`
@@ -38,6 +43,7 @@ export const TextContainer = styled.div`
     align-items: center;
 
     @media screen and (max-width: 720px){
+        padding: 15px 0px;
         width: 100%;
     }
 `

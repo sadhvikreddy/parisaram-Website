@@ -50,7 +50,7 @@ const Spine = () => {
                         to = '/services/path#epss' scroll = {(el => {scrollwith(el)})}
                     >
                         <Cardimg src = {e} type = 'image/svg' />
-                        <CardText>EPS Services</CardText>
+                        <CardText>EPR Services</CardText>
                     </Card>
                     <Card
                         to = '/services/path#aware' scroll = {(el => {scrollwith(el)})}
@@ -67,29 +67,41 @@ const Spine = () => {
                     </Card>
                     </SpineCardsWrapper1>
                 <SpineCardsWrapper data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-in-sine"  data-aos-duration="300">
-                <Card>
+                <Card
+                    to = '/services/path#mapp' scroll = {(el => {scrollwith(el)})}
+                >
                         <Cardimg src = {a} type = 'image/svg' />
                         <CardText>Mobile Application</CardText>
                     </Card>
-                    <Card>
+                    <Card
+                        to = '/services/path#d2dc' scroll = {(el => {scrollwith(el)})}
+                    >
                         <Cardimg src = {g} type = 'image/svg' />
                         <CardText>Door-to-Door Services</CardText>
                     </Card>
-                    <Card>
+                    <Card
+                        to = '/services/path#recsto' scroll = {(el => {scrollwith(el)})}
+                    >
                         <Cardimg src = {b} type = 'image/svg' />
                         <CardText>Recycled Store</CardText>
                     </Card>
-                    <Card>
-                        <Cardimg src = {c} type = 'image/svg' />
-                        <CardText>Impact</CardText>
+                    <Card
+                        to = '/services/path#epss' scroll = {(el => {scrollwith(el)})}
+                    >
+                        <Cardimg src = {e} type = 'image/svg' />
+                        <CardText>EPR Services</CardText>
                     </Card>
-                    <Card>
+                    <Card
+                        to = '/services/path#aware' scroll = {(el => {scrollwith(el)})}
+                    >
                         <Cardimg src = {d} type = 'image/svg' />
                         <CardText>Awareness</CardText>
                     </Card>
-                    <Card>
-                        <Cardimg src = {e} type = 'image/svg' />
-                        <CardText>Our Services</CardText>
+                    <Card
+                        to = '/services/path#impact' scroll = {(el => {scrollwith(el)})}
+                    >
+                        <Cardimg src = {c} type = 'image/svg' />
+                        <CardText>Impact</CardText>
                     </Card>
                     </SpineCardsWrapper>
             </SpineContainer>

@@ -4,13 +4,12 @@ import {
     ContactBG,
     NotesWrapper,
     NotesContainer,
-    NotesContainer0,
-    NotesContainer1,
-    NotesContainer2,
     NotesLogo,
     NotesTitle,
     NotesInfo,
-    SocialIcon
+    SocialIcon,
+    Hline,
+    SocialCont
 }
 from './ContactEle'
 
@@ -26,10 +25,7 @@ const Contact = () => {
             <ContactContainer id = "contact">
                 <ContactBG src = {bgi} type = 'image/svg' />
                     <NotesWrapper>
-                        <NotesContainer 
-                        data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine"  data-aos-duration="200"
-                        href = 'tel: +919035881005'
-                        >
+                        <NotesContainer>
                             <NotesLogo>
                                 <HiPhone />
                             </NotesLogo>
@@ -37,28 +33,28 @@ const Contact = () => {
                             >
                                 Phone
                             </NotesTitle>
-                            <NotesInfo>
+                            <NotesInfo
+                                href = 'tel:9035881005'
+                            >
                                 9035881005
                             </NotesInfo>
                         </NotesContainer>
-                        <NotesContainer0 
-                         data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"  data-aos-duration="200" 
-                            href = 'mailto: admin@parisaram.com'
-                        >
+                        <Hline />
+                        <NotesContainer>
                             <NotesLogo>
                                 <HiMail />
                             </NotesLogo>
                             <NotesTitle>
                                 Email
                             </NotesTitle>
-                            <NotesInfo>
+                            <NotesInfo
+                                href = 'mailto:admin@parisaram.com'
+                            >
                                 admin@parisaram.com
                             </NotesInfo>
-                        </NotesContainer0>
-                        <NotesContainer1
-                        data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine"  data-aos-duration="200"
-                        href = 'https://goo.gl/maps/25j8Yd5E3APdHaUV8'
-                       >
+                            </NotesContainer>
+                            <Hline />
+                            <NotesContainer>
                             <NotesLogo>
                                 <HiLocationMarker />
                             </NotesLogo>
@@ -66,22 +62,23 @@ const Contact = () => {
                                 Registered Office
                             </NotesTitle>
                             <NotesInfo>
-                                #412 1st E main road, Koramangala 8th Block, Behind Lawrence School, Bengaluru-560095
+                                Koramangala 8th Block, Behind Lawrence School, Bengaluru-560095
                             </NotesInfo>
-                        </NotesContainer1>
-                        <NotesContainer2
-                    data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"  data-aos-duration="200"
-                        >
-                            <SocialIcon href = "https://www.facebook.com/parisramitra">
-                                <AiFillFacebook />
+                            </NotesContainer>
+                            <Hline />
+                        <NotesContainer>
+                        <SocialCont>
+                                <SocialIcon href = "https://www.facebook.com/parisramitra">
+                                    <AiFillFacebook />
+                                </SocialIcon>
+                                <SocialIcon href = "https://instagram.com/parisaramitra?igshid=17dmsxjtxcaod" >
+                                    <AiFillInstagram />
+                                </SocialIcon>
+                                <SocialIcon href = "https://www.linkedin.com/company/parisara-mitra">
+                                    <AiFillLinkedin />
                             </SocialIcon>
-                            <SocialIcon href = "https://instagram.com/parisaramitra?igshid=17dmsxjtxcaod" >
-                                <AiFillInstagram />
-                            </SocialIcon>
-                            <SocialIcon href = "https://www.linkedin.com/company/parisara-mitra">
-                                <AiFillLinkedin />
-                            </SocialIcon>
-                        </NotesContainer2>
+                        </SocialCont>
+                        </NotesContainer>
                     </NotesWrapper>
             </ContactContainer> 
         </>

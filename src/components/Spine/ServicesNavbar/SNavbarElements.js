@@ -1,19 +1,18 @@
 import styled from 'styled-components';
 import {Link as linkS} from 'react-scroll'
-import {HashLink as linkH} from 'react-router-hash-link'
 
 import { IoArrowBackCircleSharp as pm} from "react-icons/io5"
 
 export const Nav = styled.nav`
     background-color: #ddd;
-    height: 80px;
-    width: 100%;
+    height: 100%;
+    width: 80px;
     display: 'flex';
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     position: sticky;
-    top: 0;
+    left:0;
     z-index: 10;
 
     @media screen and (max-width: 720px){
@@ -30,8 +29,7 @@ export const NavbarContainer = styled.div`
     justify-content: center;
 
     @media screen and (max-width:720px){
-        display: grid;
-        grid-template-rows: auto auto auto;
+        flex-direction: column;
         justify-content: center;
     }
 `
@@ -40,7 +38,7 @@ export const NavbarWrapper =styled.div`
     display: flex;
 `
 
-export const NavLogoWrapper = styled(linkH)`
+export const NavLogoWrapper = styled(linkS)`
     justify-self: flex-start;
     cursor: pointer;
     display: flex;

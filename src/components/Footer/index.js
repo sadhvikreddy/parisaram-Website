@@ -44,7 +44,7 @@ const Footer = () => {
                     </LogoWrap>
                     <Hline></Hline>
                     <FooterMenu>
-                    <FooterLink to="/#about" 
+                    <FooterLink to="about" 
                     smooth = {true}
                     duration = {500}
                     spy = {true}
@@ -53,14 +53,14 @@ const Footer = () => {
                     >
                         About
                     </FooterLink>
-                    <FooterLink to="/#wwd" 
+                    <FooterLink to="sdf" 
                     smooth = {true}
                     duration = {500}
                     spy = {true}
                     exact = 'true'>
-                        What We Do?
+                        Our Services
                     </FooterLink>
-                    <FooterLink to="/#contact" 
+                    <FooterLink to="contact" 
                     smooth = {true}
                     duration = {500}
                     spy = {true}

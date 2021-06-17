@@ -3,8 +3,6 @@ import {
     Nav,
     NavbarContainer,
     NavbarWrapper,
-    NavLogoWrapper,
-    NavLogo,
     NavMenu,
     NavItem,
     NavLinks,
@@ -13,11 +11,7 @@ import {
 
 
 
-const scrollwith = (el) => {
-    const y = el.getBoundingClientRect().top + window.pageYOffset;
-    const offset = -80;
-    window.scrollTo({  top: y + offset, behavior:'smooth'});
-}
+
 
 const ServicesNavbar = ({toggle}) => {
         return (
@@ -26,10 +20,6 @@ const ServicesNavbar = ({toggle}) => {
                     <NavbarContainer>
                         <NavbarWrapper>
                         <NavMenu>
-                        <NavLogoWrapper to="/#wwd" scroll = {(el) => scrollwith(el)}
-                        >
-                            <NavLogo />
-                        </NavLogoWrapper>
                             <NavItem>
                                 <NavLinks to="mapp"
                                           smooth = {true}
@@ -64,7 +54,7 @@ const ServicesNavbar = ({toggle}) => {
                                           spy = {true}
                                           exact = 'true'
                                           offset = {-80}
-                                >EPS Services</NavLinks>
+                                >EPR Services</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="aware"

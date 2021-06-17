@@ -18,12 +18,15 @@ const impa = 'Total Waste Collected: 121KG '
 const ServicesData = () => {
     return (
         <>
-            <ServicesTemp ids = "mapp" heading = "MOBILE APPLICATION" matter = {mac} imag = {a} />
-            <ServicesTemp ids = "d2dc" heading = "DOOR TO DOOR COLLECTION SERVICE" matter = {dcs} imag = {b} />
-            <ServicesTemp ids = 'recsto' heading = "RECYCLED STORE" matter = {res} imag = {c} />
-            <ServicesTemp ids = 'epss' heading = "EXTENDED PRODUCER RESPONSIBILITY" matter = {epr} imag = {d} />
-            <ServicesTemp ids = 'aware' heading = "AWARENESS PROGRAMS" matter = {awa} imag = {e} />
-            <ServicesTemp ids = 'impact' heading = "OUR IMPACT" matter = {impa} imag = {f} />
+            <div id = "sdf">
+                <ServicesTemp ids = "mapp" heading = "MOBILE APPLICATION" matter = {mac} imag = {a} />
+                <ServicesTemp ids = "d2dc" heading = "DOOR TO DOOR COLLECTION SERVICE" matter = {dcs} imag = {b} />
+                <ServicesTemp ids = 'recsto' heading = "RECYCLED STORE" matter = {res} imag = {c} />
+                <ServicesTemp ids = 'epss' heading = "EXTENDED PRODUCER RESPONSIBILITY" matter = {epr} imag = {d} />
+                <ServicesTemp ids = 'aware' heading = "AWARENESS PROGRAMS" matter = {awa} imag = {e} />
+                <ServicesTemp ids = 'impact' heading = "OUR IMPACT" matter = {impa} imag = {f} />
+            </div>
+
         </>
     )
 }

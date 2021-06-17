@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {
     Container,
     Wrapper,
@@ -9,8 +9,14 @@ import {
     Vline
 }
 from './ServicesTempElements'
+import { animateScroll as scroll } from 'react-scroll'
 
 const ServicesTemp = (props) => {
+    useEffect(() => {
+        console.log("hook called")
+        scroll.scrollToTop();
+    }, [])
+
     return (
         <>
             <Container id = {props.ids}>

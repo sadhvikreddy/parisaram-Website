@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import {
-    HashLink as linkS
+    Link as linkS
 }
-from 'react-router-hash-link'
+from 'react-scroll'
 
 export const FooterContainer = styled.footer`
     background-color: #101522;

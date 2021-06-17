@@ -33,7 +33,7 @@ const Sidebar = ({ isOpen, toggle}) => {
                     exact = 'true'
                     offset = {-80}
                     onClick = {toggle}>
-                        What We Do?
+                       Our Services
                     </SidebarLink>
                     <SidebarLink to="contact" 
                     smooth = {true}

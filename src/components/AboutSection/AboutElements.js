@@ -7,7 +7,8 @@ export const AboutContainer = styled.div`
     align-items: center;
     justify-content: center;
     background: #ffffff;
-    background: linear-gradient(180deg,#ffffff 45%, #b3c9bd 85%);
+    background: linear-gradient(180deg,#ffffff 25%, #b3c9bd 45%, #ddd 76%);
+    max-width: 100%;
 `
 
 
@@ -15,17 +16,18 @@ export const AboutTextWrapper = styled.div`
     width: 60%;
     background-color: #dddfdf;
     align-items: center;
-    background-color: rgba( 255, 255, 255, 0.30 );
+    background-color: rgba( 255, 255, 255, 0.9 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9.5px );
     -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 999;
   //  display: none;
 
     
     @media screen and (max-width:720px) {
-        width: 80%;
+        width: 30%;
     }
     
     @media screen and (max-width: 480px) {
@@ -40,8 +42,9 @@ export const AboutText = styled.p`
     padding: 8%;
     text-align: justify;
     transition: 0.13s;
-
+    z-index: 999;
     @media screen and (max-width: 720px) {
+        width: 80%;
         font-size: 18px;
     }
 
@@ -51,21 +54,36 @@ export const AboutText = styled.p`
 `
 
 export const AboutBG = styled.h1`
-    position: absolute;
     align-self: center;
-    font-size: 450px;
-    opacity: 0.5;
+    font-size: 50px;
+    opacity: 1;
     font-family: Oswald;
   background: -webkit-linear-gradient(#5a6c30, #000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 10px;
+  z-index: 999;
 
   @media screen and (max-width: 720px) {
-        font-size: 230px;
+        font-size: 40px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 100px;
+        font-size: 35px;
+    }
+`
+
+export const PMLogoBG = styled.img`
+    position: absolute;
+    right:0;
+    top:30%;
+    z-index: 1;
+    width: auto;
+    height: 60vh;
+
+    @media screen and (max-width: 720px){
+        top:60%;
+        height:30vh;
     }
 `

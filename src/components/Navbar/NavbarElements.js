@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {Link as linkS} from 'react-scroll'
 
 export const Nav = styled.nav`
-    background-color: ${({tvl}) => tvl ? '#fff' : 'transparent'};
+    background-color: #fff;
     height: 80px;
     width: 100%;
     display: ${({navB}) => navB ? 'none' : 'flex'};
@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 
     @media screen and (max-width: 720px){
         transition: 0.8s all ease;
@@ -49,7 +49,7 @@ export const NavLogoWrapper = styled(linkS)`
 export const NavLogo = styled.img`
     justify-self: flex-start;
     cursor: pointer;
-    display: ${({tvl}) => tvl ? 'flex' : 'none'};
+    display: flex;
     align-items:center;
     margin-left: 12px;
     height: 65px;
@@ -112,5 +112,4 @@ export const NavLinks = styled(linkS)`
         border-top: 5px solid #5a6c30;
     }
 `
-
 
