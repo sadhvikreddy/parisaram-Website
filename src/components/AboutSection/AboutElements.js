@@ -27,7 +27,7 @@ export const AboutTextWrapper = styled.div`
 
     
     @media screen and (max-width:720px) {
-        width: 30%;
+        width: 60%;
     }
     
     @media screen and (max-width: 480px) {
@@ -44,12 +44,12 @@ export const AboutText = styled.p`
     transition: 0.13s;
     z-index: 999;
     @media screen and (max-width: 720px) {
-        width: 80%;
+      //  width: 80%;
         font-size: 18px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 `
 
@@ -58,19 +58,21 @@ export const AboutBG = styled.h1`
     font-size: 50px;
     opacity: 1;
     font-family: Oswald;
-  background: -webkit-linear-gradient(#5a6c30, #000);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 10px;
-  z-index: 999;
+    background: #5a6c30;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+    z-index: 999;
+    text-align: center;
 
   @media screen and (max-width: 720px) {
-        font-size: 40px;
+        font-size: 20px;
+
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 35px;
+        font-size: 18px;
     }
 `
 

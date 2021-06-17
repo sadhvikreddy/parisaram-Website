@@ -14,6 +14,8 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 720px){
         padding: 0px;
         flex-direction:  column;
+        justify-content: center;
+        align-items: center;
     }
 
 `
@@ -29,7 +31,7 @@ export const Photo = styled.img`
 
     @media screen and (max-width: 720px){
         height: auto;
-        width: 100%;
+        width: 80%;
 
     }
 `
