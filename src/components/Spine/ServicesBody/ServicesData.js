@@ -1,4 +1,7 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
+
+import firebase from '../../../firebase'
+
 import ServicesTemp from './ServicesTemp'
 import a from '../../../images/SpineImages/Services/mapp.png'
 import b from '../../../images/SpineImages/Services/d2dc.png'
@@ -13,9 +16,20 @@ const dcs = 'We collect waste from your doorstep at timely intervals and make su
 const res = 'Buy Eco-friendly Recycled products through our Mobile Application which has Wide range of Products'
 const epr = 'EPR Services means responsibility of any Producer, Importer, Brand Owner of Products such as plastic, E-Waste ,etc for environmentally sound management, till end-of-life of the products. We help PIBOs with the registration and Compliance process with CPCB'
 const awa = 'We create awareness among people through our social media posts, videos and various other programs and educate them about the effective waste management'
-const impa = 'Total Waste Collected: 121KG '
+
 
 const ServicesData = () => {
+
+    const [impact, setImpact] = useState('')
+
+
+    useEffect(() => {
+        let ref = firebase.database().ref('wasteCounter')
+        ref.on('value',(snapshot) =>{
+            let Msg = "Total Waste Collected: " + JSON.stringify(snapshot.val()) + "KG"
+            setImpact(Msg)
+        })
+    }, [])
     return (
         <>
             <div id = "sdf">
@@ -24,7 +38,7 @@ const ServicesData = () => {
                 <ServicesTemp ids = 'recsto' heading = "RECYCLED STORE" matter = {res} imag = {c} />
                 <ServicesTemp ids = 'epss' heading = "EXTENDED PRODUCER RESPONSIBILITY" matter = {epr} imag = {d} />
                 <ServicesTemp ids = 'aware' heading = "AWARENESS PROGRAMS" matter = {awa} imag = {e} />
-                <ServicesTemp ids = 'impact' heading = "OUR IMPACT" matter = {impa} imag = {f} />
+                <ServicesTemp ids = 'impact' heading = "OUR IMPACT" matter = {impact} imag = {f} />
             </div>
 
         </>

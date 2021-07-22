@@ -13,7 +13,6 @@ import { animateScroll as scroll } from 'react-scroll'
 
 const ServicesTemp = (props) => {
     useEffect(() => {
-        console.log("hook called")
         scroll.scrollToTop();
     }, [])
 
